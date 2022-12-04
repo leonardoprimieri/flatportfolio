@@ -1,0 +1,153 @@
+aside {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  margin-right: 1rem;
+  z-index: 9999999;
+  max-width: 10%;
+  transition: all 400ms ease;
+}
+
+.aside-content nav ul li a,
+.aside-content nav ul li:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aside-content span {
+  color: #fff;
+}
+
+.aside-content span.small-item {
+  font-size: 0.7rem;
+}
+
+.aside-logo #logo {
+  cursor: pointer;
+}
+
+.aside-content {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.aside-logo img {
+  width: 4rem;
+}
+
+.aside-content {
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .aside-content {
+    margin-top: 0;
+  }
+}
+
+.aside-content svg {
+  cursor: pointer;
+}
+
+.aside-content svg:hover {
+  fill: #1c1c1c;
+  transition: all 400ms ease;
+}
+
+.aside-content ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+svg.svg-blog {
+  position: absolute;
+}
+
+svg.svg-warning {
+  top: 0;
+  right: 1rem;
+  position: relative;
+  background-color: red;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 0.2rem;
+  background-color: #1c1c1c;
+}
+
+.aside-content ul li {
+  margin: 1rem 0;
+}
+
+.aside-content nav ul li a.active-menu svg,
+.aside-content nav ul li a.active-menu span {
+  fill: var(--primary-color);
+  color: var(--primary-color);
+}
+
+@media (max-width: 1100px) {
+  .aside-content nav ul li a.active-menu svg,
+  .aside-content nav ul li a.active-menu span {
+    fill: #1c1c1c;
+    color: #1c1c1c;
+  }
+
+  aside {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    margin-right: 1rem;
+    z-index: 99999999999999;
+    width: 100vw;
+    max-width: 100%;
+    background-color: var(--primary-color);
+  }
+
+  .aside-logo {
+    width: 10%;
+  }
+
+  .aside-content {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .aside-content ul {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .aside-content ul li {
+    margin: 1rem;
+  }
+
+  .aside-content svg.svg-warning,
+  .aside-content svg.svg-blog,
+  .aside-content .blog-span {
+    display: none;
+  }
+
+  .aside-content span.small-item {
+    font-size: 1rem;
+  }
+
+  span.menu-span-item {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 510px) {
+  .aside-content ul {
+    display: none;
+  }
+}
