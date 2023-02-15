@@ -1,13 +1,13 @@
-import SectionTitle from "../../components/section-title/section-title";
+import SectionTitle from '../../components/section-title/section-title'
 
-import "./style.css";
+import './style.css'
 
 const About = () => {
   return (
     <div
       className='full-screen full-screen__about'
       style={{
-        backgroundImage: `url("images/svg/wave-about.png")`,
+        backgroundImage: 'url("images/svg/wave-about.png")'
       }}
     >
       <section className='about-main show-container' id='about'>
@@ -16,9 +16,9 @@ const About = () => {
           <div className='about-content__left'>
             <p>
               Meu nome é Leonardo Merlo Primieri, estudante de Front End há 2 anos. Moro em Passo
-              Fundo - RS estou fazendo ciências da computação na IMED e sou Dev Front End na{" "}
+              Fundo - RS estou fazendo ciências da computação na IMED e sou Dev Front End na{' '}
               <a
-                style={{ color: "var(--primary-color)" }}
+                style={{ color: 'var(--primary-color)' }}
                 href='https://www.whydea.com.br/'
                 target='_blank'
                 rel='noreferrer'
@@ -38,7 +38,7 @@ const About = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

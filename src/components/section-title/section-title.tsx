@@ -1,8 +1,8 @@
-import { ReactNode } from "react";
-import "./style.css";
+import { ReactNode } from 'react'
+import './style.css'
 
 type Props = {
-  children: ReactNode;
+  children: ReactNode
 };
 
 const SectionTitle = ({ children }: Props) => {
@@ -11,7 +11,7 @@ const SectionTitle = ({ children }: Props) => {
       <span>{children}</span>
       <hr />
     </div>
-  );
-};
+  )
+}
 
-export default SectionTitle;
+export default SectionTitle

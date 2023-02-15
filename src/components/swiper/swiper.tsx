@@ -1,14 +1,14 @@
-import { Swiper as SwiperContainer, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination } from "swiper";
-import "swiper/swiper-bundle.css";
+import { Swiper as SwiperContainer, SwiperSlide } from 'swiper/react'
+import SwiperCore, { Navigation, Pagination } from 'swiper'
+import 'swiper/swiper-bundle.css'
 
-import "./style.css";
-import { JobsModel } from "@/models/jobs-model";
+import './style.css'
+import { JobsModel } from '@/models/jobs-model'
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination])
 
 type Props = {
-  data: JobsModel[];
+  data: JobsModel[]
 };
 
 const Swiper = ({ data }: Props) => {
@@ -20,24 +20,24 @@ const Swiper = ({ data }: Props) => {
             <SwiperSlide
               className='lp-main-slider'
               key={id}
-              style={{ background: "url(/images/svg/wave-projects.png)" }}
+              style={{ background: 'url(/images/svg/wave-projects.png)' }}
             >
               <div className='lm-slide__img'>
                 <img
-                  style={!project ? { width: "65%" } : {}}
+                  style={!project ? { width: '65%' } : {}}
                   src={image}
                   alt={name}
                   className='lp-swiper-slide'
                 />
               </div>
-              <div className='lm-slide__info' style={!project ? { width: "100%" } : {}}>
+              <div className='lm-slide__info' style={!project ? { width: '100%' } : {}}>
                 <div className='slide-info__name'>
                   <h1>{name}</h1>
 
-                  {Boolean(project) ? (
-                    <span className={`${"span-study__project"}`}>estudo</span>
+                  {project ? (
+                    <span className={`${'span-study__project'}`}>estudo</span>
                   ) : (
-                    ""
+                    ''
                   )}
                 </div>
                 <p>{description}</p>
@@ -59,7 +59,7 @@ const Swiper = ({ data }: Props) => {
         </SwiperContainer>
       )}
     </>
-  );
-};
+  )
+}
 
-export default Swiper;
+export default Swiper

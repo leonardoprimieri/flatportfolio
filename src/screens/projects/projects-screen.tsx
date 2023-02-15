@@ -1,7 +1,7 @@
-import "./style.css";
-import { jobs } from "../../utils/jobs";
-import SectionTitle from "../../components/section-title/section-title";
-import Swiper from "../../components/swiper/swiper";
+import './style.css'
+import { jobs } from '../../utils/jobs'
+import SectionTitle from '../../components/section-title/section-title'
+import Swiper from '../../components/swiper/swiper'
 
 const Projects = () => {
   return (
@@ -9,7 +9,7 @@ const Projects = () => {
       <SectionTitle>Projetos</SectionTitle>
       <Swiper data={jobs} />
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

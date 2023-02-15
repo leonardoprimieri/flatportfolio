@@ -1,24 +1,24 @@
-import { FaGithub, FaMedal, FaProjectDiagram, FaUser } from "react-icons/fa";
+import { FaGithub, FaMedal, FaProjectDiagram, FaUser } from 'react-icons/fa'
 
 export const MENU_ITEMS = [
   {
-    href: "about",
+    href: 'about',
     icon: <FaUser size={24} color='#fff' className='menu-span-item' />,
-    text: "Sobre",
+    text: 'Sobre'
   },
   {
-    href: "projects",
+    href: 'projects',
     icon: <FaProjectDiagram size={24} color='#fff' className='menu-span-item' />,
-    text: "Projetos",
+    text: 'Projetos'
   },
   {
-    href: "github",
+    href: 'github',
     icon: <FaGithub size={24} color='#fff' className='menu-span-item' />,
-    text: "Github",
+    text: 'Github'
   },
   {
-    href: "certificates",
+    href: 'certificates',
     icon: <FaMedal size={24} color='#fff' className='menu-span-item' />,
-    text: "Certificados",
-  },
-];
+    text: 'Certificados'
+  }
+]

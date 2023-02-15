@@ -7,7 +7,8 @@
     "predeploy": "yarn run build",
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint src --ext .ts,.tsx --fix"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",

@@ -1,4 +1,4 @@
 export type TechModel = {
-  name: string;
-  icon: JSX.Element;
+  name: string
+  icon: JSX.Element
 };

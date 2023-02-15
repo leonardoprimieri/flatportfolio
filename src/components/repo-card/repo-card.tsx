@@ -1,8 +1,8 @@
-import { RepoModel } from "@/models/repo-model";
-import "./style.css";
+import { RepoModel } from '@/models/repo-model'
+import './style.css'
 
 type Props = {
-  data: RepoModel;
+  data: RepoModel
 };
 
 const RepoCard = ({ data }: Props) => {
@@ -12,11 +12,11 @@ const RepoCard = ({ data }: Props) => {
         <hr />
         <div className='project-card__info'>
           <h1>{data.name}</h1>
-          <p>{data.description ? data.description : "Projeto sem descrição 😣"}</p>
+          <p>{data.description ? data.description : 'Projeto sem descrição 😣'}</p>
         </div>
       </div>
     </a>
-  );
-};
+  )
+}
 
-export default RepoCard;
+export default RepoCard

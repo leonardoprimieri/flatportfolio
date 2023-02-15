@@ -1,22 +1,22 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
-import ReactTypingEffect from "react-typing-effect";
+import { useContext } from 'react'
+import { Link } from 'react-router-dom'
+import ReactTypingEffect from 'react-typing-effect'
 
-import { FaEye, FaGithub } from "react-icons/fa";
+import { FaEye, FaGithub } from 'react-icons/fa'
 
-import TransitionScreenContext from "../../contexts/transitions-screen-context";
+import TransitionScreenContext from '../../contexts/transitions-screen-context'
 
-import "./style.css";
+import './style.css'
 
 const Home = () => {
-  const { setLinkClicked } = useContext<any>(TransitionScreenContext);
+  const { setLinkClicked } = useContext<any>(TransitionScreenContext)
 
-  const typeName = "Leonardo M. Primieri";
+  const typeName = 'Leonardo M. Primieri'
   return (
     <div
       className='full-screen show-container'
       style={{
-        backgroundImage: `url("images/svg/wave.png")`,
+        backgroundImage: 'url("images/svg/wave.png")'
       }}
     >
       <section className='home-main__content' id='home'>
@@ -47,7 +47,7 @@ const Home = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

@@ -1,5 +1,5 @@
-import { createContext } from "react";
+import { createContext } from 'react'
 
-const MenuMobileContext = createContext(null as any);
+const MenuMobileContext = createContext(null as any)
 
-export default MenuMobileContext;
+export default MenuMobileContext
