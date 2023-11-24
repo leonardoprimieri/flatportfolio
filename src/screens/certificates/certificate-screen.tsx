@@ -6,7 +6,7 @@ import { certificates } from '../../utils/certificates'
 const Certificates = () => {
   return (
     <div
-      className='main-certificates show-container'
+      className="main-certificates show-container"
       style={{
         backgroundImage: 'url(./images/svg/medalha.png)'
       }}

@@ -16,6 +16,7 @@ import MenuButton from './components/menu-button/menu-button'
 function App() {
   const [linkClicked, setLinkClicked] = useState(false)
   const [mobile, setMobile] = useState(false)
+
   return (
     <>
       <TransitionScreenContext.Provider value={{ linkClicked, setLinkClicked }}>
@@ -25,11 +26,11 @@ function App() {
             <SideBar mobile={mobile} />
             <MenuButton setMobile={setMobile} />
             <Switch>
-              <Route exact path='/' component={Home} />
-              <Route path='/about' component={About} />
-              <Route path='/projects' component={Projects} />
-              <Route path='/github' component={GitHub} />
-              <Route path='/certificates' component={Certificates} />
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/github" component={GitHub} />
+              <Route path="/certificates" component={Certificates} />
             </Switch>
           </BrowserRouter>
         </MenuMobileContext.Provider>
