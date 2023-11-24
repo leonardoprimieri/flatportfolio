@@ -15,7 +15,7 @@
 }
 
 .transition-screen img {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 @keyframes hide1 {
@@ -28,11 +28,7 @@
   100% {
     transform: translateX(200vw);
   }
-
-  
 }
-
-
 
 @keyframes hide3 {
   0% {

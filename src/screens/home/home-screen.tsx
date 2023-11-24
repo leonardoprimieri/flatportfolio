@@ -14,35 +14,41 @@ const Home = () => {
   const typeName = 'Leonardo M. Primieri'
   return (
     <div
-      className='full-screen show-container'
+      className="full-screen show-container"
       style={{
         backgroundImage: 'url("images/svg/wave.png")'
       }}
     >
-      <section className='home-main__content' id='home'>
-        <div className='main-content_wrapper'>
-          <div className='main-content__left'>
+      <section className="home-main__content" id="home">
+        <div className="main-content_wrapper">
+          <div className="main-content__left">
             <h1>
-              <ReactTypingEffect text={typeName} typingDelay={400} />
+              <ReactTypingEffect text={typeName} typingDelay={100} />
             </h1>
             <p>Desenvolvedor Front End.</p>
-            <div className='content-left__buttons'>
-              <Link to='github'>
-                <button className='button button-secondary' onClick={() => setLinkClicked(true)}>
+            <div className="content-left__buttons">
+              <Link to="github">
+                <button
+                  className="button button-secondary"
+                  onClick={() => setLinkClicked(true)}
+                >
                   repositórios
-                  <FaGithub />
+                  <FaGithub size={24} />
                 </button>
               </Link>
-              <Link to='projects'>
-                <button className='button button-primary' onClick={() => setLinkClicked(true)}>
+              <Link to="projects">
+                <button
+                  className="button button-primary"
+                  onClick={() => setLinkClicked(true)}
+                >
                   projetos
-                  <FaEye />
+                  <FaEye size={24} />
                 </button>
               </Link>
             </div>
           </div>
-          <div className='main-content__right'>
-            <img className='hero-home' src='/images/svg/guy-coding.svg' />
+          <div className="main-content__right">
+            <img className="hero-home" src="/images/svg/guy-coding.svg" />
           </div>
         </div>
       </section>
